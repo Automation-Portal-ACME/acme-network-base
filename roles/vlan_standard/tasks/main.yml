@@ -1,0 +1,14 @@
+---
+- name: Configure standard VLANs
+  cisco.ios.ios_vlans:
+    config:
+      - vlan_id: 10
+        name: MANAGEMENT
+        state: active
+      - vlan_id: 20
+        name: SERVERS
+        state: active
+      - vlan_id: 30
+        name: WORKSTATIONS
+        state: active
+    state: merged
