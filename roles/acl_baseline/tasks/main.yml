@@ -1,0 +1,15 @@
+---
+- name: Configure baseline ACLs
+  cisco.ios.ios_acls:
+    config:
+      - afi: ipv4
+        acls:
+          - name: DENY_RFC1918_IN
+            aces:
+              - sequence: 10
+                grant: deny
+                source:
+                  address: 10.0.0.0
+                  wildcard_bits: 0.255.255.255
+                protocol: ip
+    state: merged
