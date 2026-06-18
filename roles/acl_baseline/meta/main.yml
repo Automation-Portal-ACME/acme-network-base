@@ -1,0 +1,6 @@
+galaxy_info:
+  role_name: acl_baseline
+  namespace: acme
+  description: "acl_baseline role"
+  min_ansible_version: '2.14'
+dependencies: []
