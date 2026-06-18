@@ -1,0 +1,14 @@
+namespace: acme
+name: network_base
+version: 1.0.0
+readme: README.md
+authors:
+  - ACME Corp Platform Team
+description: "ACME Corp baseline network configurations, VLAN templates, and ACL management"
+tags:
+  - network
+  - cisco
+  - vlan
+  - acl
+dependencies: {}
+repository: https://github.com/Automation-Portal-ACME/acme-network-base
