@@ -1,0 +1,6 @@
+galaxy_info:
+  role_name: vlan_standard
+  namespace: acme
+  description: "vlan_standard role"
+  min_ansible_version: '2.14'
+dependencies: []
